@@ -48,7 +48,7 @@ function handleSubmit(event) {
 
   if (inputEl.value && messageEl.value) {
     console.log(formData);
-    localStorage.clear();
+    localStorage.removeItem(FEEDBACK_FORM_STATE);
     event.currentTarget.reset();
     formData = {
       email: '',
